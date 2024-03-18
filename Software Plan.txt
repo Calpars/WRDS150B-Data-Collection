@@ -1,0 +1,6 @@
+Data collection Plan
+Use a python script to scrape the contents of all of the CBC’s articles about nuclear energy over the last 25 Years. 
+Clean and prepare data for sentiment analysis
+Conduct a sentiment analysis using the python NLTK 
+Export all of the sentiment data as a csv in format (positive,negative,data)
+Analyze data using matlab, graph trends over decades, identify significant dates/changes in aggregate sentiment of articles. Look at number of positive or negative articles published by year/month/decade

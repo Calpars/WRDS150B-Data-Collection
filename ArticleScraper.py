@@ -11,13 +11,20 @@ import time
 from bs4 import BeautifulSoup
 import pandas as pandas
 
-URLS_FILE = "URLS.txt"
-OUTPUT_FILE = "output.csv"
+#URLS = ["Geothermal_URLs.txt", "Nuclear_URLs.txt", "Solar_URLs.txt", "Tidal_URLs.txt", "Wind_URLs.txt"]
+#OUTPUTS = ["Geothermal_Output.csv", "Nuclear_Output.csv", "Solar_Output.csv", "Tidal_Output.csv", "Wind_Output.csv"]
+
+URLS_FILE = "Wind_URLs.txt"
+OUTPUT_FILE = "Wind_Output.csv"
 
 T_START = time.perf_counter()
 
 def scrape_page(url):
-    response = requests.get(url)
+    try:
+        response = requests.get(url)
+    except:
+        quit()
+    
     # Check if the request was successful
     if response.status_code == 200:
         html_content = response.content
@@ -83,3 +90,4 @@ def generate_data():
         print(f"{i/2} Articles Analyzed. Time elapsed: {time.perf_counter()-T_START:.4f} seconds.")
 
 generate_data()
+

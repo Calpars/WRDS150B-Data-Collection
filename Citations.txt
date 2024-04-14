@@ -1,0 +1,5 @@
+Software Citations
+Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.
+Richardson, L. (2007). Beautiful soup documentation. April.
+McKinney, W., & others. (2010). Data structures for statistical computing in python. In Proceedings of the 9th Python in Science Conference (Vol. 445, pp. 51–56).
+
